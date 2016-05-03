@@ -6,7 +6,7 @@ module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
 
-  homebridge.registerAccessory("homebridge-lirc", "lirc", GenericLircDeviceAccessory);
+  homebridge.registerAccessory("homebridge-lirc", "Lirc", GenericLircDeviceAccessory);
 }
 
 function GenericLircDeviceAccessory(log, config) {
