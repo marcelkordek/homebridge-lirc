@@ -10,15 +10,21 @@
 
     "accessories": [
         {
-            "accessory": "lirc",
-            "name": "Stereo",
-            "description": "Home Theater Stereo",
-            "id": "OL1",
-            "manufacturer": "Yamaha",
-            "model_name": "YAS-101",
-            "on_command": "irsend SEND_ONCE audio power\r",
-            "off_command": "irsend SEND_ONCE audio power\r",
-            "initial_state": "off"
+            "accessory": "Lirc",
+            "name": "Ventilator",
+            "description": "Ventilator",
+            "id": "Ventilator",
+            "manufacturer": "Generic",
+            "model_name": "GenericFan",
+            "on_command": "irsend SEND_ONCE ventilator key_power\r",
+            "off_command": "irsend SEND_ONCE ventilator key_power\r",
+            "speed_0": "irsend SEND_ONCE ventilator key_0\r",
+            "speed_1": "irsend SEND_ONCE ventilator key_1\r",
+            "speed_2": "irsend SEND_ONCE ventilator key_2\r",
+            "speed_3": "irsend SEND_ONCE ventilator key_3\r",
+            "initial_state": "off",
+            "type": "Fan",
+            "fanLight":"yes"
         }
     ]
 }
